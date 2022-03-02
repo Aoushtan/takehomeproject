@@ -342,7 +342,7 @@ def aggregate_stage(connection, config, initial_data):
             project["$project"]["median_" + str(col)] = {"$arrayElemAt" : ["$med_calc_" + str(col), {"$toInt" : {"$divide" : [{"$size" : "$med_calc_" + str(col)}, 2]}}]}
     project["$project"]["all_unique_strings"] = {"$concatArrays" : concat}
     aggregation.append(project)
-    print(aggregation)
+    #print(aggregation)
     print("Aggregation complete.")
     try:
         final_data = temp_collection.aggregate(aggregation)
