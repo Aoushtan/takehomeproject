@@ -9,7 +9,7 @@ Description
 Limitations
 *	I had some trouble with making an intuitive user input system but I think the .ini file works good enough for this project
 *	There is no MAP stage necessarily in this code due to the way I handled the retrieve step.
-*	Application really isn't built for MongoDb data due to using .json files with preset columns
+*	Application really isn't built for MongoDb data due to using .json files with preset columns, that being said, if I added a .ini file generator step it would be able to use any collection of documents with varrying fields
 	*	Also there isn't any logic built in for "or" in the queries as I didn't see a good way to do it with the .ini file and there are various other operations that aren't really supported like grouping by multiple fields
 *	A lot more unit tests could be run to test every combination of .ini file configurations
 *	Definitely needs more exception handling
